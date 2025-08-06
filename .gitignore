@@ -7,16 +7,13 @@
 *.swo
 *.bak
 
-# Node.js (api/ and web/)
-api/node_modules/
-web/node_modules/
-shared/node_modules/
-api/dist/
-web/dist/
-shared/dist/
-api/coverage/
-web/coverage/
-shared/coverage/
+# Node.js (api/, web/, shared/, and nested folders like api/typescript-api/)
+node_modules/
+*/node_modules/
+dist/
+*/dist/
+coverage/
+*/coverage/
 *.tsbuildinfo
 
 # iOS (Xcode/Swift)
@@ -55,5 +52,5 @@ supabase/config.toml.bak
 supabase/.temp/
 supabase/.branches/
 
-# GROK: Add any additional project-specific ignores here, e.g., for local test DB dumps
+# GROK: Add project-specific ignores here, e.g., for local test DB dumps
 # *.sql
