@@ -1,0 +1,59 @@
+# General
+*.log
+.env
+*.env.*
+.DS_Store
+*.swp
+*.swo
+*.bak
+
+# Node.js (api/ and web/)
+api/node_modules/
+web/node_modules/
+shared/node_modules/
+api/dist/
+web/dist/
+shared/dist/
+api/coverage/
+web/coverage/
+shared/coverage/
+*.tsbuildinfo
+
+# iOS (Xcode/Swift)
+ios/DerivedData/
+ios/*.xcarchive
+ios/*.ipa
+ios/Pods/
+ios/*.xcworkspace/
+ios/build/
+ios/*.xcodeproj/project.xcworkspace/
+ios/*.xcodeproj/xcuserdata/
+ios/*.xcodeproj/*.pbxproj.bak
+
+# Go (for future api/ transition)
+api/bin/
+api/*.exe
+api/go.sum
+api/vendor/
+
+# Shared build artifacts
+shared/build/
+
+# Editor and IDE files
+.idea/
+.vscode/
+*.code-workspace
+
+# Testing and CI/CD
+coverage/
+*.lcov
+.cache/
+.nyc_output/
+
+# Supabase-specific (optional, for local configs or backups)
+supabase/config.toml.bak
+supabase/.temp/
+supabase/.branches/
+
+# GROK: Add any additional project-specific ignores here, e.g., for local test DB dumps
+# *.sql
